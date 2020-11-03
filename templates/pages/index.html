@@ -48,7 +48,7 @@
                     <div class="col-lg-3">
                         <div class="full">
                             <div class="logo">
-                                <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
                             </div>
                         </div>
                     </div>
@@ -56,10 +56,13 @@
                         <div class="full">
                             <div class="top_section_info">
                                 <ul>
-                                    <li>Contact Us: <img src="images/i1.png" alt="#" /> <a href="#">( +71 7569834142
+                                    <li>Contact Us: <img src="{% static 'images/i1.png' %}" alt="#" /> <a href="#">( +71
+                                            7569834142
                                             )</a></li>
-                                    <li><img src="images/i2.png" alt="#" /> <a href="#">honey@gmail.com</a></li>
-                                    <li><img src="images/i3.png" alt="#" /> <a href="#">104 New york , USA</a></li>
+                                    <li><img src="{% static 'images/i2.png' %}" alt="#" /> <a
+                                            href="#">honey@gmail.com</a></li>
+                                    <li><img src="{% static 'images/i3.png' %}" alt="#" /> <a href="#">104 New york ,
+                                            USA</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -121,41 +124,14 @@
     <section class="slider_section">
         <div class="container-fluid">
             <div class="row">
-                <div id="main_slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-                    <div class="carousel-inner">
-                        <div class="carousel-item slider_inner slider1 active">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="slider_coint_inner">
-                                        <h3>Best<br><strong>New Collection</strong></h3>
-                                        <h4 class="font_themecolor">Loxury Jewellery</h4>
-                                        <p>Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis<br>
-                                            lacinia nec et est aptent taciti sociosqu ad litora torquent per conubia
-                                            nostra</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item slider_inner slider2">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="slider_coint_inner">
-                                        <h3>Best<br><strong>New Collection</strong></h3>
-                                        <h4 class="font_themecolor">Loxury Jewellery</h4>
-                                        <p>Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis<br>
-                                            lacinia nec et est aptent taciti sociosqu ad litora torquent per conubia
-                                            nostra</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider_bullets">
-                            <ol class="carousel-indicators">
-                                <li data-target="#main_slider" data-slide-to="0" class="active"><i
-                                        class="fa fa-chevron-left"></i></li>
-                                <li data-target="#main_slider" data-slide-to="1"><i class="fa fa-chevron-right"></i>
-                                </li>
-                            </ol>
+                <div class="container">
+                    <div class="row">
+                        <div class="slider_coint_inner">
+                            <h3>Best<br><strong>New Collection</strong></h3>
+                            <h4 class="font_themecolor">Loxury Jewellery</h4>
+                            <p>Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis<br>
+                                lacinia nec et est aptent taciti sociosqu ad litora torquent per conubia
+                                nostra</p>
                         </div>
                     </div>
                 </div>
@@ -163,131 +139,6 @@
         </div>
     </section>
     <!-- end slider -->
-
-    <!-- about section -->
-    <section class="layout_padding section padding_bottom_0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="full heading_s1">
-                        <h2>About</h2>
-                    </div>
-                    <div class="full">
-                        <p class="large">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and</p>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="about_img margin_top_30  text_align_center">
-                        <img src="images/video_img.jpg" alt="#" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end about section -->
-
-    <!-- section -->
-    <section class="layout_padding padding_bottom_0" style="background: #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="full heading_s1">
-                        <h2>Jewellery</h2>
-                    </div>
-                    <div class="full">
-                        <p class="large">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row product_section">
-                <div class="col-md-4">
-                    <div class="full product_blog margin_top_30">
-                        <img src="images/pro1.jpg" alt="#" />
-                        <h3><span style="color: #72dd78 !important;">$100</span> Diamond ring</h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="full product_blog margin_top_30">
-                        <img src="images/pro2.jpg" alt="#" />
-                        <h3><span style="color: #72dd78 !important;">$100</span> Diamond ring</h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="full product_blog margin_top_30">
-                        <img src="images/pro3.jpg" alt="#" />
-                        <h3><span style="color: #72dd78 !important;">$100</span> Diamond ring</h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="full product_blog margin_top_30">
-                        <img src="images/pro3.jpg" alt="#" />
-                        <h3><span style="color: #72dd78 !important;">$100</span> Diamond ring</h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="full product_blog margin_top_30">
-                        <img src="images/pro4.jpg" alt="#" />
-                        <h3><span style="color: #72dd78 !important;">$100</span> Diamond ring</h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="full product_blog margin_top_30">
-                        <img src="images/pro5.jpg" alt="#" />
-                        <h3><span style="color: #72dd78 !important;">$100</span> Diamond ring</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-
-    <!-- section -->
-    <section class="layout_padding section padding_bottom_0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="full heading_s1">
-                        <h2>Our Shop</h2>
-                    </div>
-                    <div class="full">
-                        <p class="large">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-
-    <!-- section -->
-    <section class="layout_padding haf_layout section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-11">
-                    <div class="row">
-                        <div class="container">
-                            <div class="col-md-8">
-                                <div class="full banner_section">
-                                    <h3>Best <span style="color: #72dd78 !important;">Jewellery Shop</span></h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="img-responsive" src="images/bg1.jpg" alt="#" />
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-
     <!-- section -->
     <section class="layout_padding section padding_bottom_0">
         <div class="container">
@@ -304,7 +155,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="gold_con">
-                                    <img src="images/gold_c.png" alt="#" />
+                                    <img src="{% static 'images/gold_c.png' %}" alt="#" />
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -343,7 +194,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
-                    <a href="index.html"><img class="img-responsive" src="images/logo_footer.png" alt="#" /></a>
+                    <a href="index.html"><img class="img-responsive" src="{% static 'images/logo_footer.png' %}"
+                            alt="#" /></a>
                 </div>
 
                 <div class="col-md-3 col-sm-12">
@@ -352,7 +204,7 @@
                     </div>
                     <div class="address_infor">
                         <p>
-                            <span class="icon"><img src="images/location_icon.png" alt="#" /></span>
+                            <span class="icon"><img src="{% static 'images/location_icon.png' %}" alt="#" /></span>
                             <span class="addrs">104 New York , USA</span>
                         </p>
                     </div>
@@ -364,10 +216,10 @@
                     </div>
                     <div class="social_icon">
                         <ul>
-                            <li><a href="#"><img src="images/fb.png" alt="#" /></a></li>
-                            <li><a href="#"><img src="images/tw.png" alt="#" /></a></li>
-                            <li><a href="#"><img src="images/gp.png" alt="#" /></a></li>
-                            <li><a href="#"><img src="images/in.png" alt="#" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/fb.png' %}" alt="#" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/tw.png' %}" alt="#" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/gp.png' %}" alt="#" /></a></li>
+                            <li><a href="#"><img src="{% static 'images/in.png' %}" alt="#" /></a></li>
                         </ul>
                     </div>
                 </div>
@@ -394,7 +246,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>© 2019 All Rights Reserved. <a href="https://html.design/">Free html Templates</a></p>
+                    <p>© 2020 All Rights Reserved.</p>
                 </div>
             </div>
         </div>
