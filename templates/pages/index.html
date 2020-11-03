@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
@@ -13,19 +14,19 @@
 <!-- site icon -->
 <link rel="icon" href="images/fevicon.png" type="image/png" />
 <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.css" rel="stylesheet">
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
 <!-- FontAwesome Icons core CSS -->
-<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="{% static  'css/font-awesome.min.css' %}" rel="stylesheet">
 <!-- Custom animate styles for this template -->
-<link href="css/animate.css" rel="stylesheet">
+<link href="{% static  'css/animate.css' %}" rel="stylesheet">
 <!-- Custom styles for this template -->
-<link href="style.css" rel="stylesheet">
+<link href="{% static 'style.css' %}" rel="stylesheet">
 <!-- Responsive styles for this template -->
-<link href="css/responsive.css" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 <!-- Colors for this template -->
-<link href="css/colors.css" rel="stylesheet">
+<link href="{% static 'css/colors.css' %}" rel="stylesheet">
 <!-- light box gallery -->
-<link href="css/ekko-lightbox.css" rel="stylesheet">
+<link href="{% static 'css/ekko-lightbox.css' %}" rel="stylesheet">
 <!--[if lt IE 9]>
    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -35,7 +36,7 @@
 <body id="home_page" class="home_page">
     <!-- loader -->
     <div id="preloader">
-        <img class="preloader" src="images/logo.png" alt="#">
+        <img class="preloader" src="{% static 'images/logo.png' %}" alt="#">
     </div>
     <!-- end loader -->
     <!-- header -->
@@ -401,13 +402,13 @@
     <!-- end footer -->
     <!-- Core JavaScript
          ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/ekko-lightbox.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/tether.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/parallax.js' %}"></script>
+    <script src="{% static 'js/animate.js' %}"></script>
+    <script src="{% static 'js/ekko-lightbox.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
 </body>
 
 </html>
