@@ -26,7 +26,7 @@ SECRET_KEY = ')smbdr-6eyf8erzm+3=f&vv%7(**roh*jf9zupfx6m(+4k&fdc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "pages",
+    "covid19",
 ]
 
 MIDDLEWARE = [
@@ -77,8 +78,11 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'covid19',
+        'USER': 'postgres',
+        'PASSWORD': 'Root123kosmos',
+        'HOST': '34.121.87.192'
     }
 }
 
