@@ -4,16 +4,16 @@ from django.conf import settings
 
 
 class covid19(models.Model):
-    Country = models.CharField(max_length=250)
-    CountryCode = models.CharField(max_length=250)
-    Slug = models.CharField(max_length=10)
-    NewConfirmed = models.IntegerField()
-    TotalConfirmed = models.IntegerField()
-    NewDeaths = models.IntegerField()
-    TotalDeaths = models.IntegerField()
-    NewRecovered = models.IntegerField()
-    TotalRecovered = models.IntegerField()
-    Date = models.DateTimeField(default=datetime.now)
+    country = models.CharField(max_length=250)
+    countryCode = models.CharField(max_length=250)
+    slug = models.CharField(max_length=10)
+    newConfirmed = models.IntegerField()
+    totalConfirmed = models.IntegerField()
+    newDeaths = models.IntegerField()
+    totalDeaths = models.IntegerField()
+    newRecovered = models.IntegerField()
+    totalRecovered = models.IntegerField()
+    date = models.DateTimeField(default=datetime.now)
 
     def __str__(self):
         return self.title
