@@ -126,11 +126,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="slider_coint_inner">
-                            <h3>Best<br><strong>New Collection</strong></h3>
-                            <h4 class="font_themecolor">Loxury Jewellery</h4>
-                            <p>Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis<br>
-                                lacinia nec et est aptent taciti sociosqu ad litora torquent per conubia
-                                nostra</p>
+                            <h3>COVID19<br><strong>New Information</strong></h3>
+                            <h4 class="font_themecolor">covid19</h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -140,9 +138,37 @@
     <!-- end slider -->
     <section>
         <div class="container">
-            {% for covid_item in covid19 %}
-            <p>{{covid_item.country}} = {{covid_item.countrycode}}</p>
-            {% endfor %}
+
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Country</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Slug</th>
+                        <th scope="col">New confirmed</th>
+                        <th scope="col">Total confirmed</th>
+                        <th scope="col">New deaths</th>
+                        <th scope="col">Total deaths</th>
+                        <th scope="col">New recovered</th>
+                        <th scope="col">Total recovered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for covid_item in covid19 %}
+                    <tr>
+                        <td>{{ covid_item.country }}</td>
+                        <td>{{ covid_item.countrycode }}</td>
+                        <td>{{ covid_item.slug }}</td>
+                        <td>{{ covid_item.newconfirmed }}</td>
+                        <td>{{ covid_item.totalconfirmed }}</td>
+                        <td>{{ covid_item.newdeaths }}</td>
+                        <td>{{ covid_item.totaldeaths }}</td>
+                        <td>{{ covid_item.newrecovered }}</td>
+                        <td>{{ covid_item.totalrecovered }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </section>
 
