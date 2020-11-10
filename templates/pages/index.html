@@ -70,7 +70,6 @@
                 </div>
             </div>
         </div>
-
         <div class="header_bottom_section">
 
             <div class="container">
@@ -139,6 +138,14 @@
         </div>
     </section>
     <!-- end slider -->
+    <section>
+        <div class="container">
+            {% for covid_item in covid19 %}
+            <p>{{covid_item.country}} = {{covid_item.countrycode}}</p>
+            {% endfor %}
+        </div>
+    </section>
+
     <!-- section -->
     <section class="layout_padding section padding_bottom_0">
         <div class="container">

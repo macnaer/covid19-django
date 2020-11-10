@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'covid_19',
+        'NAME': 'covid___19',
         'USER': 'postgres',
         'PASSWORD': 'Root123kosmos',
-        'HOST': '34.71.151.157'
+        'HOST': '34.70.62.184'
     }
 }
 
